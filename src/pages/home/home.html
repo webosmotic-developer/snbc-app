@@ -1,14 +1,26 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      SNBC
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-item>
+    <ion-label>Cabinet ID</ion-label>
+    <ion-select [(ngModel)]="iCabinetID">
+      <ion-option  *ngFor="let cabinetID of cabinetArr">{{cabinetID}}</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Slot ID</ion-label>
+    <ion-select [(ngModel)]="iSlotID">
+      <ion-option  *ngFor="let slotID of slotArr">{{slotID}}</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-buttons text-uppercase>
+    <button class="pp-btn" ion-button large (click)="fnOpenSlot()">Open Slot</button>
+    <button class="pp-btn" ion-button large (click)="fnGetSlotStatus()">Slot Status</button>
+  </ion-buttons>
 </ion-content>
