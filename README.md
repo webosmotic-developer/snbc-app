@@ -81,7 +81,7 @@ I have used [Android studio](https://developer.android.com/studio/index.html) fo
 Clone the `cordova-plugin-snbc` repository using git:
 
 ```
-git clone https://github.com/vipul-todeveloper/cordova-plugin-snbc.git
+git clone https://github.com/webosmotic-developer/cordova-plugin-snbc.git
 ```
 
 this command creates a folder named "cordova-plugin-snbc"
